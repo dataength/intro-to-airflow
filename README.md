@@ -17,4 +17,21 @@ pip install --upgrade pip==20.2.4
 export AIRFLOW_HOME=/Users/zkan/Projects/dataength/intro-to-airflow/airflow-local
 ./setup.sh
 airflow db init
+airflow users create \
+    --role Admin \
+    --username airflow \
+    --password airflow \
+    --firstname airflow \
+    --lastname airflow \
+    --email airflow@airflow.com
+```
+
+```sh
+export AIRFLOW_HOME=/Users/zkan/Projects/dataength/intro-to-airflow/airflow-local
+airflow webserver
+```
+
+```sh
+export AIRFLOW_HOME=/Users/zkan/Projects/dataength/intro-to-airflow/airflow-local
+airflow scheduler
 ```
