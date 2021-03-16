@@ -8,10 +8,10 @@ x-airflow-common: &airflow-common
     - AIRFLOW__CORE__LOAD_EXAMPLES=True
     - AIRFLOW__CORE__LOGGING_LEVEL=INFO
   volumes:
-    - ./airflow/dags:/opt/airflow/dags
-    - ./airflow/logs:/opt/airflow/logs
-    - ./airflow/plugins:/opt/airflow/plugins
-    - ./airflow/airflow.cfg:/opt/airlfow/airflow.cfg
+    - ./airflow-docker/dags:/opt/airflow/dags
+    - ./airflow-docker/logs:/opt/airflow/logs
+    - ./airflow-docker/plugins:/opt/airflow/plugins
+    - ./airflow-docker/airflow.cfg:/opt/airlfow/airflow.cfg
   depends_on:
     - postgres
 
