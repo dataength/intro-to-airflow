@@ -35,3 +35,10 @@ airflow webserver
 export AIRFLOW_HOME=/Users/zkan/Projects/dataength/intro-to-airflow/airflow-local
 airflow scheduler
 ```
+
+### ติดตั้งแพคเกจเสริม
+
+amazon
+```sh
+pip install apache-airflow-providers-amazon
+```
