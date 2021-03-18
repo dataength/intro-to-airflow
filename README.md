@@ -42,3 +42,15 @@ amazon
 ```sh
 pip install apache-airflow-providers-amazon
 ```
+
+ตั้งค่าการเชื่อมต่อกับ S3
+
+* Conn Id: `aws_s3_conn`
+* Conn Type: `Amazon Web Services`
+* Extra:
+    ```
+    {
+        "aws_access_key_id": "_your_aws_access_key_id_", 
+        "aws_secret_access_key": "_your_aws_secret_access_key_"
+    }
+    ```
