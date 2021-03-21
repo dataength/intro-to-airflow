@@ -74,3 +74,15 @@ my_ge_task = GreatExpectationsOperator(
     dag=dag
 )
 ```
+
+### Known Issues
+
+When get the error below on macOS
+```sh
+[2021-03-21 15:36:48,420] {local_task_job.py:146} INFO - Task exited with return code Negsignal.SIGABRT
+```
+
+Fix by
+```sh
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+```
